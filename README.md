@@ -34,7 +34,7 @@ var qValue = "twitter";
 
 These are parameters that can be included in the request URL
 
-All parameters for the user timelne are on the same page where you find the resources URL: https://dev.twitter.com/rest/reference/get/statuses/user_timeline
+All parameters for the user timeline are on the same page where you find the resources URL: https://dev.twitter.com/rest/reference/get/statuses/user_timeline
 
 In controller.js
 ```sh
