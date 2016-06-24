@@ -7,7 +7,12 @@ angular.module('twitterFeed.controllers', [])
 .controller('TwitterFeedCtrl', function($scope, TwitterREST) {
     TwitterREST.sync().then(function(tweets){
         console.log(tweets);
-        $scope.tweets = tweets.statuses;
+        // statement used for search query
+        // $scope.tweets = tweets.statuses;
+
+        // statement used for a specific user timeline
+        $scope.tweets = tweets;
+
     });
 
         $scope.innapBrowser = function (value) {

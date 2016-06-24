@@ -96,8 +96,17 @@ angular.module('twitterFeed.services', [])
         var consumerKey = "you Consumer Key (API Key) here";
         var consumerSecret = "you Consumer Secret (API Secret) here";
     var twitterTokenURL = "https://api.twitter.com/oauth2/token";
-    var twitterStreamURL = "https://api.twitter.com/1.1/search/tweets.json?q="; //url query, this one is for hash tags
-    var qValue = "%23belgrade"; //hash tag %23 is for #
+
+    // parameters used for search query
+        // var twitterStreamURL = "https://api.twitter.com/1.1/search/tweets.json?q="; //url query, this one is for hash tags
+        // var qValue = "%23belgrade"; //hash tag %23 is for #
+
+
+    // parameters used for a specific user timeline
+    var twitterStreamURL ="https://api.twitter.com/1.1/statuses/user_timeline.json?screen_name=";
+    var qValue = 'twitter'
+
+
     var numberOfTweets = "&count=10";
 
     self.sync = function () {
